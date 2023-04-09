@@ -1,0 +1,143 @@
+#task1-div {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+.hidden {
+    display: none;
+}
+
+.squares{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+#yellow-square {
+    background-color: yellow;
+    cursor: pointer;
+}
+
+#red-square {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 0, 0);
+    display: none;
+}
+
+#green-rect {
+    width: 50px;
+    height: 20px;
+    background-color: green;
+    display: none;
+}
+
+#coordinates{
+    width: 100px;
+    padding-left: 10px;
+    background-color: azure;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 16px;
+}
+
+#language-check{
+    width: 100px;
+    padding-left: 10px;
+    background-color: azure;
+    position: absolute;
+    right: 0;
+    top: 10%;
+    font-size: 16px;
+}
+
+#longitude-check{
+    width: 100px;
+    padding-left: 10px;
+    background-color: azure;
+    position: absolute;
+    right: 0;
+    top: 20%;
+    font-size: 16px;
+}
+
+.up{
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.up.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.bigger {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(164, 246, 164);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.smaller {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(241, 163, 241);
+    cursor: pointer;
+}
+
+#block-screen{
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#full-screen{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(96, 96, 96, 0.544);
+    display: none;
+    cursor: pointer;
+}
+
+.file-upload {
+    width: 500px;
+    height: 350px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.file-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.file-label {
+  font-size: 16px;
+}
+
+.file-upload.dragover {
+    border-color: #2196F3;
+}

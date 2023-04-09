@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="js-basics.css">
+    <script src="js-basics.js"></script>
+    <title>Task 2</title>
+
+</head>
+<body onmousemove="getPosition(event)" onload="start()">
+    <div id="task1-div"></div>
+    <button id="button1" onclick="hideWithCSS()">Delete block CSS</button>
+    <button id="button2" onclick="deleteWithJS()">Delete block JS</button>
+    <button id="button3" onclick="deleteJSandCSS()">Delete block CSS + JS</button>
+    <button id="button4" onclick="ShowOrHide()">Show</button>
+
+    <div class="squares"></div>
+    <div class="squares"></div>
+    <div class="squares"></div>
+    <div class="squares"></div>
+    <div class="squares"></div>
+    <button id="button5" onclick="hideSquares()">Hide squares</button>
+    <br><br>
+    <label for="">Input CSS selector:</label>
+    <input type="text" name="" id="input1">
+    <button id="button6" onclick="workWithSelectors()">Show or Hide</button>
+
+    <div id="yellow-square" class="squares" onclick="yellowSquare()"></div>
+    <br>
+    <div id="red-square"></div>
+    <button id="button7" onmouseover="redSquare()" onmouseout="redSquareNone()">Red square!!!</button>
+    <br><br>
+    <div id="green-rect"></div>
+    <input type="text" id="input2">
+    <br><br>
+
+    <label for="">Enter img link:</label>
+    <input type="text" id="input3">
+    <button id="button8" onclick="showImage()">Show image</button>
+    <div id="image-div"></div>
+    <br><br>
+    <label for="">Enter img links:</label>
+    <textarea type="text" id="textarea"></textarea>
+    <button id="button9" onclick="showImages()">Show images</button>
+    <div id="image-div2"></div>
+    <br><br>
+
+    <div id="coordinates">
+        <p>X: <span id="x-coord"></span> </p>
+        <p>Y: <span id="y-coord"></span> </p>
+    </div>
+    <div id="language-check">
+        <p>Language id <span id="language"></span> </p>
+    </div>
+    <div id="longitude-check">
+        <p>Latitude: <br> <span id="latitude"></span> </p>
+        <p>Longitude: <br> <span id="longitude"></span> </p>
+    </div>
+    
+    <textarea name="textarea1" id="textarea1" cols="30" rows="10"></textarea>
+    <br>
+    <textarea name="textarea2" id="textarea2" cols="30" rows="10"></textarea>
+    <br>
+    <textarea name="textarea3" id="textarea3" cols="30" rows="10"></textarea>
+
+    <div class="bigger" id="bigger">
+        <div class="smaller" id="smaller"></div>
+    </div>
+    <br><br>
+    <button id="block-screen" onclick="screenBlock()">Block screen</button>
+    <div id="full-screen" onclick="enableScroll()"></div>
+    <br><br>
+    <form><input type="submit" value="GO" id="myForm"></form>
+    <br><br>
+    <button class="up" id="up" onclick="moveUp()">UP!</button>
+    <br><br>
+    <div class="file-upload">
+        <input type="file" class="file-input" id="fileInput">
+        <label for="fileInput" class="file-label">
+             <i class="fas fa-upload"></i> Виберіть файл або перетягніть його сюди
+         </label>
+    </div>
+</body>
+</html>
